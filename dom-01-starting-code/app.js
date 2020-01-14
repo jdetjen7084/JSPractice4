@@ -35,3 +35,21 @@ ulFam.previousElementSibling
 
 //gives the next sibling
 ulFam.nextElementSibling
+
+
+
+//adds item before last element in a list
+list.lastElementChild.before();
+
+//adds items after last element in a list
+list.lastElementChild.after();
+
+//replace first item in a list
+list.firstElementChild.replaceWIth();
+
+//before() and after() don't work on Safari
+
+//works on all platforms, have to use 'beforebegin', 'afterbegin', 'beforeend', 'afterend'
+//as first argument, then the second argument is what you're entering
+list.insertAdjacentElement();
+
